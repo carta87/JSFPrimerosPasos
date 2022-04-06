@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 5 abr. 2022 20:46:54 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="Persona" table="persona" schema="public" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="apellido" type="string">
+            <column name="apellido" />
+        </property>
+        <property name="dni" type="java.lang.Integer">
+            <column name="dni" />
+        </property>
+        <property name="empleado" type="java.lang.Boolean">
+            <column name="empleado" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" />
+        </property>
+    </class>
+</hibernate-mapping>
